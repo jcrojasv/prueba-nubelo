@@ -22,8 +22,7 @@
        $error = false;
 
     }
-      
-    
+
     if(!empty($_REQUEST)){
         
         $arrayTransaccion = array(
@@ -46,6 +45,15 @@
         );
         //LLamar al metodo crear transaccion
         $respuesta = $webService->createTransaction($arrayTransaccion);
+
+        if(array_key_exists('code',$respuesta))
+        {
+            $error = true;
+            $message = $respuesta['message'];
+        } else {
+            $error = false;
+
+        }
 
     }
             

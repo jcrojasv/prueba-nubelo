@@ -170,7 +170,7 @@ class PlaceToPay
 
             } else {
 
-                return $response->createTransactionResult->returnCode;
+                return array('code'=>'ERROR','message'=>$response->createTransactionResult->returnCode);
 
             }
         } catch (SoapFault $e) {
