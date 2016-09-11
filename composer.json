@@ -1,0 +1,22 @@
+{
+    "name": "jcrojasv/pruebanubelo",
+    "description": "Esta libreria permite hacer un proceso de pago basico, consumiento un webservice de PSE",
+    "license": "MIT",
+    "keywords": ["PruebaNubelo"],
+    "authors": [
+        {
+            "name": "Juancarlos Rojas",
+            "email": "jcrojasv@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.25"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {"jcrojasv\\PruebaNubelo\\": "/src"}
+    }
+    
+}
